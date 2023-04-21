@@ -59,9 +59,9 @@ try:
         sendmsg('command', 0)
         sendmsg('takeoff')
 
-        # Review the (SDK) Software Development Kit resource for Drone Commands
-        # Delete these comments before writing your program
-
+        for i in range(0,4):
+            sendmsg('forward 100')
+            sendmsg('cw 90')
         sendmsg('land')
 
         print('\nGreat Flight!!!')
