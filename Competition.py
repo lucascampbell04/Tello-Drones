@@ -60,9 +60,14 @@ try:
         sendmsg('command', 0)
         sendmsg('takeoff')
 
-        # Review the (SDK) Software Development Kit resource for Drone Commands
-        # Delete these comments before writing your program
-
+        sendmsg('up 50')
+        sendmsg('forward 250')
+        sendmsg('up 20')
+        sendmsg('forward 100')
+        sendmsg('ccw 90')
+        sendmsg('forward 350')
+        sendmsg('ccw 90')
+        sendmsg('forward 100')
         sendmsg('land')
 
         print('\nGreat Flight!!!')
